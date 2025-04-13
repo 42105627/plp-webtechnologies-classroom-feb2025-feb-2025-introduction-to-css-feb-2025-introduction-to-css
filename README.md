@@ -27,3 +27,114 @@ Margins, paddings, and borders.
  - Improve readability and aesthetics.
 
 Happy Coding! 💻✨
+
+1. HTML FILE
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Styled Webpage</title>
+  <!-- Linking to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1 id="main-heading">Welcome to My Styled Webpage</h1>
+  </header>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <h2>Introduction</h2>
+    <p>This page demonstrates the use of CSS for styling elements. It includes a variety of selectors, spacing, and font styles.</p>
+    <img src="joel pic.jpg" alt="Sample Image" class="styled-image">
+  </section>
+
+  <!-- Content Section -->
+  <section class="content">
+    <h2>CSS Basics</h2>
+    <p class="paragraph">CSS allows you to control the layout, colors, and typography of a web page. You can use classes, IDs, and element selectors to apply styles to different parts of a page.</p>
+    <p class="paragraph">This section demonstrates margins, paddings, and borders, which are essential for creating well-spaced, aesthetically pleasing designs.</p>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Joel simiyu.</p>
+  </footer>
+</body>
+</html>
+
+
+2. CSS FILE
+
+/* General Reset to avoid browser inconsistencies */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply styles to the body */
+  body {
+    font-family: 'Arial', sans-serif; /* Basic font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+  }
+  
+  /* Styling the header */
+  #main-heading {
+    text-align: center;
+    color: #4CAF50; /* Green color for the main heading */
+    margin-top: 30px;
+  }
+  
+  /* Styling for the intro section */
+  .intro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+  }
+  
+  /* Styling the image inside intro section */
+  .styled-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border: 5px solid #4CAF50; /* Green border */
+    border-radius: 8px; /* Rounded corners for the image */
+  }
+  
+  /* Styling for the content section */
+  .content {
+    padding: 30px;
+    background-color: #ffffff;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #ccc; /* Light border */
+  }
+  
+  /* Styling paragraphs with a different font and padding */
+  .paragraph {
+    font-family: 'Courier New', Courier, monospace; /* Different font */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 4px solid #4CAF50; /* Green left border */
+    background-color: #f9f9f9; /* Slight background color */
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+  }
+
